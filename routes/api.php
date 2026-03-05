@@ -305,6 +305,9 @@ Route::middleware('api')
 
                         Route::get('smr-areas', 'SmrAreaController@getFormattedSmrAreas');
 
+                        // Runways
+                        Route::get('runway', 'RunwayController@getAllRunways');
+
                         // Sids
                         Route::get('sid/dependency', 'SidController@getSidsDependency');
 
